@@ -1,5 +1,15 @@
 .component01 {
   width: 297px;
-  height: 373px;
   border: solid black 1px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
