@@ -1,23 +1,20 @@
 import React, { Component } from "react";
 import "./cardmedia.scss";
 
-class Card extends Component {
+class MediaCard extends Component {
   render() {
     return (
       <div className="component01">
         <header>
-          <img src="https://www.niemanlab.org/images/Greg-Emerson-edit-2.jpg" title="title" className="img-class" />
+          <img src={this.props.img} title="title" className="img-class" />
           <div className="text-container">
-            <h1 className="h1">Alex Guerrero</h1>
-            <p className="date">Lunes 26 de junio de 2017</p>
+            <h1 className="h1">{this.props.name}</h1>
+            <p className="date">{this.props.date}</p>
           </div>
         </header>
         <div className="description">
-          <p className="test">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque obcaecati,Corporis libero ut
-            perferendis optio officiis quasi exercitationem!...
-          </p>
-          <h3>37</h3>
+          <p className="test">{this.props.text}</p>
+          <h3>{this.props.likes}</h3>
           <span>
             <i class="fas fa-heart"></i>
           </span>
@@ -27,4 +24,4 @@ class Card extends Component {
   }
 }
 
-export default Card;
+export default MediaCard;
