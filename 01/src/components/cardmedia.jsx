@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Description from "./description/description";
 import "./cardmedia.scss";
 
 class MediaCard extends Component {
@@ -12,10 +13,7 @@ class MediaCard extends Component {
             <p className="date">{this.props.date}</p>
           </div>
         </header>
-        <div className="description">
-          <p className="test">{this.props.text}</p>
-          <h3>{this.props.likes}</h3>
-        </div>
+        {this.props.children}
       </div>
     );
   }
