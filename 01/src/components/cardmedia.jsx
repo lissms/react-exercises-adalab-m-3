@@ -15,9 +15,6 @@ class MediaCard extends Component {
         <div className="description">
           <p className="test">{this.props.text}</p>
           <h3>{this.props.likes}</h3>
-          <span>
-            <i class="fas fa-heart"></i>
-          </span>
         </div>
       </div>
     );
