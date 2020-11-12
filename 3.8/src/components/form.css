@@ -1,0 +1,8 @@
+.form-container {
+  width: 500px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+}

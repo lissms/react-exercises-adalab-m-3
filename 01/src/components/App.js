@@ -1,10 +1,10 @@
 import "./App.css";
-import MediaList from "./MediaList";
+import ItemList from "./itemList/itemList";
 
 function App() {
   return (
     <div className="App">
-      <MediaList />
+      <ItemList />
     </div>
   );
 }
