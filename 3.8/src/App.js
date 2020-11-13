@@ -16,7 +16,7 @@ const App = () => {
         language={language}
         languageSet={setLanguage}
       />
-      <CardInfo />
+      <CardInfo name={name} descriptions={descriptions} />
     </div>
   );
 };

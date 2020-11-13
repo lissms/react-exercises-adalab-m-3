@@ -1,10 +1,14 @@
 import React from "react";
-import cardInfo from "./cardInfo.css";
+import "./cardInfo.css";
 
 function CardInfo(props) {
   return (
     <div className="card">
-      <p></p>
+      <p>
+        {props.name}
+        <br />
+        {props.descriptions}
+      </p>
     </div>
   );
 }

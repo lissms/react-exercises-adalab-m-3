@@ -5,10 +5,10 @@ function Form(props) {
   const handlerChangeInput = (event) => {
     props.nameSet(event.target.value);
   };
-  const handlerChangeTex = (event) => {
+  const handlerChangeText = (event) => {
     props.descriptionsSet(event.target.value);
   };
-
+  console.log("props.name", props.name);
   return (
     <div>
       <form action="" className="form-container">
@@ -25,7 +25,7 @@ function Form(props) {
           cols="30"
           rows="10"
           placeholder="descripcion de la peli"
-          onChange={handlerChangeTex}
+          onChange={handlerChangeText}
         ></textarea>
         <select name="">
           <option value="Spanish">Español</option>
