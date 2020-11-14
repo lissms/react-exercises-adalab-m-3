@@ -4,11 +4,9 @@ import "./cardInfo.css";
 function CardInfo(props) {
   return (
     <div className="card">
-      <p>
-        {props.name}
-        <br />
-        {props.descriptions}
-      </p>
+      <h1>{props.name}</h1>
+      <p>{props.descriptions}</p>
+      <h3>{props.language}</h3>
     </div>
   );
 }
